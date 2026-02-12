@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Three.js Data Visualization</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <div id="buttonDiv" style="position: absolute; top: 20px; left: 20px; z-index: 10;"></div>
+
+    <div id="menu">
+        <button id="table">Table</button>
+        <button id="sphere">Sphere</button>
+        <button id="helix">Helix</button>
+        <button id="grid">Grid</button>
+    </div>
+
+    <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/renderers/CSS3DRenderer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+    
+    <script src="script.js"></script>
+    <div id="legend">
+    <span>LOW</span>
+    <div class="color-bar"></div>
+    <span>HIGH</span>
+</div>
+</body>
+</html>
