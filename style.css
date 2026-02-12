@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    background-color: #000;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#menu {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+button {
+    color: rgba(127,255,255,0.75);
+    background: transparent;
+    outline: 1px solid rgba(127,255,255,0.75);
+    border: 0;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin: 0 5px;
+    text-transform: uppercase;
+}
+
+button:hover { background-color: rgba(0,255,255,0.3); }
+
+/* The Data Tile */
+.element {
+    width: 140px;
+    height: 180px;
+    box-shadow: 0px 0px 12px rgba(0,255,255,0.5);
+    border: 1px solid rgba(255,255,255,0.25);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.element img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 5px auto;
+    border: 2px solid white;
+    object-fit: cover;
+}
+
+.element .name {
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.element .details {
+    font-size: 10px;
+    color: rgba(255,255,255,0.8);
+}
+
+.element .networth {
+    margin-top: auto;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+}
+#legend {
+    position: absolute;
+    bottom: 80px; /* Positioned above the menu buttons */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 15px;
+    border: 1px solid red;
+    z-index: 10;
+}
+
+.color-bar {
+    width: 200px;
+    height: 10px;
+    background: linear-gradient(to right, #ef3022, #fdca35, #3a9f49);
+    border: 1px solid #fff;
+}
